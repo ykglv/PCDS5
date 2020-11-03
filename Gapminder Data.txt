@@ -1,3 +1,4 @@
+# Create some Dummy changes
 gapminder %>% filter(year=="2012"&continent=="Africa") %>% ggplot(aes(fertility,life_expectancy,color=region)) + geom_point()
 df<-gapminder %>% filter(year==2012&continent=="Africa"&fertility<=3&life_expectancy>=70) %>% select(country,region)
 tab <- gapminder %>% filter((year>=1960&year<=2010) & country %in% c("Vietnam","United States"))
